@@ -1,0 +1,17 @@
+{
+  "checks_passed": 11,
+  "checks": [
+    "baseline",
+    "prioritas",
+    "tepat batas SLA",
+    "closed tidak masuk backlog",
+    "ID duplikat",
+    "PIC kosong",
+    "umur negatif",
+    "SLA nol",
+    "status tidak valid",
+    "umur pecahan",
+    "backlog kosong"
+  ],
+  "scope": "SQLite simulated analysis only"
+}

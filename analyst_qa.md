@@ -45,3 +45,11 @@ Rekomendasi operasional: DEMO-003 lebih dahulu diperiksa karena terlambat 15 har
 | UAT-10 | PO duplikat atau umur negatif | Ditolak constraint SQL |
 
 Skenario disusun sebagai contoh artefak analisis dan validasi, bukan klaim sertifikasi UAT atau metodologi tertentu.
+
+## Pemeriksaan yang dijalankan
+
+Jalankan `python3 verify_analysis.py` dengan Python 3 standar. Hasil: 11 pemeriksaan lulus. Lihat `analysis-checks.json` untuk daftar lengkap. Skenario UI di atas adalah kriteria penerimaan; hasil pemeriksaan otomatis hanya mencakup logika SQL.
+
+Untuk penyebut kosong, query menghasilkan NULL (persentase tidak berlaku). Tampilan demo menggunakan 0% untuk hasil filter kosong dan menjelaskan konvensi tersebut. SQL menolak PIC kosong, status di luar open/closed, umur pecahan atau negatif, SLA nol, dan ID duplikat.
+
+CSV adalah data awal yang sama dengan SQL; umur dihitung dalam hari kalender dan seluruh pekerjaan awal berstatus open. Tidak ada informasi mitra atau data pribadi perusahaan.
